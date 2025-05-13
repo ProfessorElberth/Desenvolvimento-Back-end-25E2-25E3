@@ -55,9 +55,9 @@ Você pode acessar o projeto de três formas diferentes:
 ### 🧬 Clonando com Git (recomendado)
 1. Certifique-se de que o Git está instalado.
 2. No terminal, execute:
-
-```bash
+```
 git clone https://github.com/ProfessorElberth/Desenvolvimento-Back-end-25E2-25E3.git
+```
 3. Abra o projeto na sua IDE Java.
 
 ### ▶️ Como executar o projeto
@@ -88,10 +88,14 @@ Este repositório é de uso acadêmico, mas sugestões de melhoria são sempre b
 Se desejar contribuir:
 1. Faça um fork do repositório
 2. Crie uma branch:
+```
 git checkout -b minha-sugestao
+```
 3. Faça suas alterações e commit
 4. Envie para o GitHub:
+```
 git push origin minha-sugestao
+```
 5. Abra um Pull Request para revisão
 
 ### 📄 Licença
