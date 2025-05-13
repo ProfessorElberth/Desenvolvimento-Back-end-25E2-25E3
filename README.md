@@ -27,14 +27,16 @@ Ao final desta disciplina, você será capaz de:
 ---
 
 ## 📁 Estrutura do Projeto
-/src
-└── br/
-└── edu/
-└── infnet/
-└── testes/
-├── HelloWorld.java # Classe principal com menu de opções e lógica de vendas
-└── Venda.java # Classe representando uma venda com atributos básicos
-
+## 📁 Estrutura do Projeto
+```
+src
+└── br
+    └── edu
+        └── infnet
+            └── testes
+                ├── HelloWorld.java   # Classe principal com menu de opções e lógica de vendas
+                └── Venda.java        # Classe representando uma venda com atributos básicos
+```
 
 ---
 
