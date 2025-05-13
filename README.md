@@ -25,8 +25,6 @@ Ao final desta disciplina, você será capaz de:
 - `Venda.java`: classe simples que representa uma venda com atributos como descrição, preço, categoria e desconto. Marca o início da nossa transição para a orientação a objetos.
 
 ---
-
-## 📁 Estrutura do Projeto
 ## 📁 Estrutura do Projeto
 ```
 src
