@@ -1,13 +1,17 @@
-package br.edu.infnet.testes;
+package br.edu.infnet.model;
+
+import br.edu.infnet.config.CategoriaProduto;
+import br.edu.infnet.config.Constante;
 
 public class Venda {
 
 	private String descricao;
-	int quantidade;
 	private float preco;
-	boolean desconto;
 	private int categoria;
-
+	private CategoriaProduto categoriaProduto;
+	private int quantidade;
+	private boolean desconto;
+	
 	public Venda(String descricao, float preco, int categoria) {
 		
 		this.preco = atualizarPrecoPorCategoria(categoria, preco);
@@ -35,7 +39,7 @@ public class Venda {
 		return 0;
 	}
 	
-	float calcularValorVenda(){
+	public float calcularValorVenda(){
 
 		float valorVenda = 0;	
 
@@ -53,5 +57,22 @@ public class Venda {
 		return String.format("Produto (%s): %s; qtde: %d; R$ %.2f; desconto: %s\nTotal da venda: %.2f\n\n",
 				categoria, descricao, quantidade, preco, desconto, calcularValorVenda()
 			);
+	}
+
+
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
+	
+	public int getQuantidade(){
+		return this.quantidade;
+	}
+
+	public void setDesconto(boolean desconto) {
+		this.desconto = desconto;
+	}
+	
+	public boolean getDesconto() {
+		return this.desconto;
 	}
 }

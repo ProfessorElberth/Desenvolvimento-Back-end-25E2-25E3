@@ -2,6 +2,9 @@ package br.edu.infnet.testes;
 
 import java.util.Scanner;
 
+import br.edu.infnet.config.Constante;
+import br.edu.infnet.model.Venda;
+
 public class GestaoVenda {
 
 	private static Venda[] vendas;
@@ -52,9 +55,9 @@ public class GestaoVenda {
 		} else {
 
 			Venda venda = new Venda(descricao, preco, categoria);
-			venda.desconto = desconto;
-			venda.quantidade = quantidade;
-					
+			venda.setDesconto(desconto);
+			venda.setQuantidade(quantidade);
+			
 			vendas[qtdeVenda] = venda;
 		
 			valorTotalVendas = valorTotalVendas + venda.calcularValorVenda();
