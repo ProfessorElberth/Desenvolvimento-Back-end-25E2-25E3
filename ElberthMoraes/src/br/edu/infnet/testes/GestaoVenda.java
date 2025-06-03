@@ -2,6 +2,7 @@ package br.edu.infnet.testes;
 
 import java.util.Scanner;
 
+import br.edu.infnet.config.CategoriaProduto;
 import br.edu.infnet.config.Constante;
 import br.edu.infnet.model.Venda;
 
@@ -24,7 +25,7 @@ public class GestaoVenda {
 
 		String descricao = null;
 		float preco = 0;	
-		int categoria = 0;
+		int codigo = 0;
 		boolean desconto = false;
 		int quantidade = 0;
 						
@@ -42,17 +43,17 @@ public class GestaoVenda {
 		System.out.print("Indique se o produto tem desconto (true/false): ");
 		desconto = leitura.nextBoolean();
 		
-		System.out.println("1 - Alimentação");
-		System.out.println("2 - Limpeza");
-		System.out.println("3 - Vestuário");
-		System.out.println("4 - Papelaria");
-		System.out.println("5 - Brinquedo");
+		for(CategoriaProduto categoria : CategoriaProduto.values()) {
+			System.out.println(categoria);
+		}
 		System.out.print("Escolha a categoria do produto: ");
-		categoria = leitura.nextInt();
+		codigo = leitura.nextInt();
 		
-		if(categoriaValida(categoria)) {
-			System.err.println("Categoria inválida: "+categoria+"!!");
+		if(categoriaValida(codigo)) {
+			System.err.println("Categoria inválida: "+codigo+"!!");
 		} else {
+			
+			CategoriaProduto categoria = CategoriaProduto.obterPorCodigo(codigo); 
 
 			Venda venda = new Venda(descricao, preco, categoria);
 			venda.setDesconto(desconto);
