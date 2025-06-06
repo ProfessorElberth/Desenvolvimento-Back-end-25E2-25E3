@@ -11,12 +11,20 @@ public class Venda {
 	private int quantidade;
 	private boolean desconto;
 	
+	private Vendedor vendedor;
+
 	public Venda(String descricao, float preco, CategoriaProduto categoriaProduto) {
 		
 		this.preco = categoriaProduto.aplicarFator(preco);
 				
 		this.descricao = descricao;
 		this.categoriaProduto = categoriaProduto;
+	}
+
+	public Venda(String descricao, float preco, CategoriaProduto categoriaProduto, String cpf, String nome, String email, double salario) {
+		this(descricao, preco, categoriaProduto);
+		
+		this.vendedor = new Vendedor(cpf, nome, email, salario);
 	}
 	
 	public float calcularValorVenda(){
@@ -33,9 +41,9 @@ public class Venda {
 	
 	@Override
 	public String toString() {
-		
-		return String.format("Produto (%s): %s; qtde: %d; R$ %.2f; desconto: %s\nTotal da venda: %.2f\n\n",
-				categoriaProduto, descricao, quantidade, preco, desconto, calcularValorVenda()
+				
+		return String.format("Produto (%s) - Vendedor (%s): %s; qtde: %d; R$ %.2f; desconto: %s\nTotal da venda: %.2f\n\n",
+				categoriaProduto, vendedor, descricao, quantidade, preco, desconto, calcularValorVenda()
 			);
 	}
 

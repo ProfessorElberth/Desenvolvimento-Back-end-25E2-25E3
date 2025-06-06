@@ -6,7 +6,8 @@ public class TestaVendedor {
 
 	public static void main(String[] args) {
 		
-		Vendedor vendedor = new Vendedor();
+		Vendedor vendedor = null;
+		vendedor = new Vendedor();
 		
 		vendedor.registrarVenda(100);
 		vendedor.registrarVenda(300);
