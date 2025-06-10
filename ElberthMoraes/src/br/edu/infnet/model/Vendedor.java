@@ -7,6 +7,8 @@ public class Vendedor {
 	private String email;
 	private double salario;
 
+	private double totalVenda;
+
 	public Vendedor() {
 		
 	}
@@ -18,8 +20,6 @@ public class Vendedor {
 		this.salario = salario;		
 	}
 	
-	private double totalVenda;
-
 	public void registrarVenda(double venda) {
 		totalVenda = totalVenda + venda;
 	}
