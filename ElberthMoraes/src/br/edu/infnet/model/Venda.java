@@ -12,6 +12,10 @@ public class Venda {
 	private boolean desconto;
 	
 	private Vendedor vendedor;
+	
+	//private Cliente cliente;
+	
+	//private Produto produto;
 
 	public Venda(String descricao, float preco, CategoriaProduto categoriaProduto) {
 		
