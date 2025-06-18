@@ -4,7 +4,6 @@ import br.edu.infnet.politica.model.superclass.Politico;
 
 public class Governador extends Politico {
 
-	
 	@Override
 	public String toString() {
 
@@ -14,5 +13,10 @@ public class Governador extends Politico {
 	@Override
 	public void fazerDiscurso() {
 		System.out.println("(Governador) anuncia plano de segurança!");
+	}
+
+	@Override
+	public double calcularSalario() {
+		return 25000;
 	}
 }

@@ -8,4 +8,10 @@ public class Vereador extends Politico {
 	public void fazerDiscurso() {
 		System.out.println("(Vereador) defente melhorias no transporte público!");
 	}
+
+	@Override
+	public double calcularSalario() {
+
+		return 8000;
+	}
 }

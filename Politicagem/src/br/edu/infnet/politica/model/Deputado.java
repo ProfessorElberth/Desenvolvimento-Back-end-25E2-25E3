@@ -18,4 +18,10 @@ public class Deputado extends Politico {
 	public void fazerDiscurso() {
 		System.out.println("(Deputado) fala sobre orçamento federal!");
 	}
+
+	@Override
+	public double calcularSalario() {
+
+		return 16000;
+	}
 }

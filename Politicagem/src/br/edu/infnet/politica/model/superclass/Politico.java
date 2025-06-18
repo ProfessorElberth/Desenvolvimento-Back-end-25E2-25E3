@@ -1,6 +1,8 @@
 package br.edu.infnet.politica.model.superclass;
 
-public abstract class Politico {
+import br.edu.infnet.politica.interfaces.Comissionado;
+
+public abstract class Politico implements Comissionado {
 
 	private String nome;
 	private String partido;
@@ -17,7 +19,7 @@ public abstract class Politico {
 	}
 	
 	public abstract void fazerDiscurso();
-	
+		
 	public final void imprimir() {
 		System.out.println("Sou político " + this.nome + " do partido " + this.partido);
 	}

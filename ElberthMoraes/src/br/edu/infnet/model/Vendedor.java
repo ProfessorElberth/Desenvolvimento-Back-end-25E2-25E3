@@ -1,5 +1,8 @@
 package br.edu.infnet.model;
 
+import br.edu.infnet.exceptions.CpfInvalidoException;
+import br.edu.infnet.exceptions.ValorNegativoException;
+
 public class Vendedor {
 
 	private String cpf;
@@ -14,10 +17,19 @@ public class Vendedor {
 	}
 	
 	public Vendedor(String cpf, String nome, String email, double salario) {
+		
+		if(cpf == null || cpf.trim().isEmpty() || cpf.length() != 11) {
+			throw new CpfInvalidoException("CPF inválido");
+		}
+		
+		if(salario < 0) {
+			throw new ValorNegativoException("O salário " + salario +" é inválido");
+		}
+		
 		this.cpf = cpf;
 		this.nome = nome;
 		this.email = email;
-		this.salario = salario;		
+		this.salario = salario;
 	}
 	
 	public void registrarVenda(double venda) {
