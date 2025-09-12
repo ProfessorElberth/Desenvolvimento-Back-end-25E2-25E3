@@ -1,0 +1,3 @@
+O Poderoso Chefao;1972;9;true;DRAMA
+Forrest Gump;1994;8;false;ACAO
+Matrix;1999;7;false;AVENTURA

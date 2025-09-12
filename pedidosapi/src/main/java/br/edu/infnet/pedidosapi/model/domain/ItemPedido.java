@@ -1,6 +1,7 @@
 package br.edu.infnet.pedidosapi.model.domain;
 
 public class ItemPedido {
+	
 	private Produto produto;
 	private int quantidade;
 	

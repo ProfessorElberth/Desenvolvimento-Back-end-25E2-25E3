@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "47e03f9f-afd9-4805-b888-639f9f821551",
+		"name": "api-elberth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47319845",
+		"_collection_link": "https://mit-infnet-java.postman.co/workspace/Team-Workspace~7bf80e07-6340-4176-8b7f-f913430facd9/collection/47319845-47e03f9f-afd9-4805-b888-639f9f821551?action=share&source=collection_link&creator=47319845"
+	},
+	"item": [
+		{
+			"name": "vendedor",
+			"item": [
+				{
+					"name": "obterPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vendedores/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vendedores",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obterLista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vendedores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vendedores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Vinicius Vianna\",\r\n    \"email\": \"vinicius@vianna.com\",\r\n    \"cpf\": \"88888888888\",\r\n    \"telefone\": \"34098765432\",\r\n    \"matricula\": 987,\r\n    \"salario\": 1000.0,\r\n    \"ehAtivo\": true,\r\n    \"endereco\": {\r\n        \"cep\": \"22233334\",\r\n        \"localidade\": \"São Paulo\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vendedores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vendedores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Vinicius Cesar Vianna\",\r\n    \"email\": \"viniciuscesar@vianna.com\",\r\n    \"telefone\": \"3434343434\",\r\n    \"matricula\": 9987,\r\n    \"salario\": 1001.0,\r\n    \"ehAtivo\": true,\r\n    \"endereco\": {\r\n        \"cep\": \"22233334\",\r\n        \"localidade\": \"São Paulo\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vendedores/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vendedores",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Vinicius Cesar Vianna\",\r\n    \"email\": \"viniciuscesar@vianna.com\",\r\n    \"telefone\": \"3434343434\",\r\n    \"matricula\": 9987,\r\n    \"salario\": 1001.0,\r\n    \"ehAtivo\": true,\r\n    \"endereco\": {\r\n        \"cep\": \"22233334\",\r\n        \"localidade\": \"São Paulo\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vendedores/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vendedores",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "inativar",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/vendedores/4/inativar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vendedores",
+						"4",
+						"inativar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

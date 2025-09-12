@@ -1,0 +1,36 @@
+Adriel Henrique Borges Cochito;1;7500.00;true;123.456.789-01;adriel@al.infnet.edu.br;(21)98765-4321;20000-001;Rua Principal;Centro;Rio de Janeiro;RJ;Rio de Janeiro
+André Cardoso Truchlaeff;2;8200.00;true;234.567.890-02;andre@al.infnet.edu.br;(11)99876-5432;01000-001;Avenida do Sol;Jardim Florido;Sao Paulo;SP;Sao Paulo
+André Gonçalves Gaspar;3;7800.00;true;345.678.901-03;andre@al.infnet.edu.br;(31)98765-1234;30100-001;Travessa da Lua;Vila Nova;Belo Horizonte;MG;Minas Gerais
+André Luiz Costa Rabelo;4;9100.00;true;456.789.012-04;andre@al.infnet.edu.br;(41)97654-3210;80000-001;Rua da Paz;Parque Central;Curitiba;PR;Parana
+Caio Vincenzo Reis Dima;5;6900.00;true;567.890.123-05;caio@al.infnet.edu.br;(51)96543-2109;90000-001;Alameda dos Campos;Bairro Industrial;Porto Alegre;RS;Rio Grande do Sul
+Carlos Henrique Silva Correia de Araújo;6;8500.00;true;678.901.234-06;carlos@al.infnet.edu.br;(71)95432-1098;40000-001;Rua Principal;Centro;Salvador;BA;Bahia
+Claudio Cavalcante de Almeida;7;7200.00;true;789.012.345-07;claudio@al.infnet.edu.br;(61)94321-0987;70000-001;Avenida do Sol;Jardim Florido;Brasilia;DF;Distrito Federal
+Davi Valadares Rodrigues Feliciano;8;9300.00;true;890.123.456-08;davi@al.infnet.edu.br;(81)93210-9876;50000-001;Travessa da Lua;Vila Nova;Recife;PE;Pernambuco
+Eduardo Baliene Rodrigues Moreira de Jesus;9;7900.00;true;901.234.567-09;eduardo@al.infnet.edu.br;(85)92109-8765;60000-001;Rua da Paz;Parque Central;Fortaleza;CE;Ceara
+Eduardo Nascimento Lima;10;8800.00;true;012.345.678-10;eduardo@al.infnet.edu.br;(92)91098-7654;69000-001;Alameda dos Campos;Bairro Industrial;Manaus;AM;Amazonas
+Elias Antônio Flach;11;7600.00;true;123.456.789-11;elias@al.infnet.edu.br;(21)98765-4321;20000-002;Rua Principal;Centro;Rio de Janeiro;RJ;Rio de Janeiro
+Emanoel Messias Pereira dos Santos;12;9000.00;true;234.567.890-12;emanoel@al.infnet.edu.br;(11)99876-5432;01000-002;Avenida do Sol;Jardim Florido;Sao Paulo;SP;Sao Paulo
+Gabriela Bueno Ribeiro;13;7100.00;true;345.678.901-13;gabriela@al.infnet.edu.br;(31)98765-1234;30100-002;Travessa da Lua;Vila Nova;Belo Horizonte;MG;Minas Gerais
+Heitor dos Santos Guedes da Silva;14;9500.00;true;456.789.012-14;heitor@al.infnet.edu.br;(41)97654-3210;80000-002;Rua da Paz;Parque Central;Curitiba;PR;Parana
+João Anderson de Assis Freitas;15;8300.00;true;567.890.123-15;joao@al.infnet.edu.br;(51)96543-2109;90000-002;Alameda dos Campos;Bairro Industrial;Porto Alegre;RS;Rio Grande do Sul
+Jose Hugo Soares Candido;16;7400.00;true;678.901.234-16;jose@al.infnet.edu.br;(71)95432-1098;40000-002;Rua Principal;Centro;Salvador;BA;Bahia
+Julio Cesar da Silva Jubilado;17;9800.00;true;789.012.345-17;julio@al.infnet.edu.br;(61)94321-0987;70000-002;Avenida do Sol;Jardim Florido;Brasilia;DF;Distrito Federal
+Karla Cristina Barros de Almeida Matias;18;8100.00;true;890.123.456-18;karla@al.infnet.edu.br;(81)93210-9876;50000-002;Travessa da Lua;Vila Nova;Recife;PE;Pernambuco
+Krossby Adhemar Camacho Alviz;19;7700.00;true;901.234.567-19;krossby@al.infnet.edu.br;(85)92109-8765;60000-002;Rua da Paz;Parque Central;Fortaleza;CE;Ceara
+Leonardo da Silva Sousa;20;8900.00;true;012.345.678-20;leonardo@al.infnet.edu.br;(92)91098-7654;69000-002;Alameda dos Campos;Bairro Industrial;Manaus;AM;Amazonas
+Luciana Mara da Silva;21;7000.00;true;123.456.789-21;luciana@al.infnet.edu.br;(21)98765-4321;20000-003;Rua Principal;Centro;Rio de Janeiro;RJ;Rio de Janeiro
+Luiz Alfredo Pereira Dias;22;9400.00;true;234.567.890-22;luiz@al.infnet.edu.br;(11)99876-5432;01000-003;Avenida do Sol;Jardim Florido;Sao Paulo;SP;Sao Paulo
+Maria Clara Mussi da Silva;23;8000.00;true;345.678.901-23;maria@al.infnet.edu.br;(31)98765-1234;30100-003;Travessa da Lua;Vila Nova;Belo Horizonte;MG;Minas Gerais
+Matheus de Oliveira Maciel;24;7300.00;true;456.789.012-24;matheus@al.infnet.edu.br;(41)97654-3210;80000-003;Rua da Paz;Parque Central;Curitiba;PR;Parana
+Matheus Jonathan dos Santos Tavares;25;9700.00;true;567.890.123-25;matheus@al.infnet.edu.br;(51)96543-2109;90000-003;Alameda dos Campos;Bairro Industrial;Porto Alegre;RS;Rio Grande do Sul
+Maxwell Simões Mineo;26;8600.00;true;678.901.234-26;maxwell@al.infnet.edu.br;(71)95432-1098;40000-003;Rua Principal;Centro;Salvador;BA;Bahia
+Paulo Roberto Marchesin;27;7900.00;true;789.012.345-27;paulo@al.infnet.edu.br;(61)94321-0987;70000-003;Avenida do Sol;Jardim Florido;Brasilia;DF;Distrito Federal
+Raquel Niehues Andrade;28;9200.00;true;890.123.456-28;raquel@al.infnet.edu.br;(81)93210-9876;50000-003;Travessa da Lua;Vila Nova;Recife;PE;Pernambuco
+Robson Brasil Pinto;29;8400.00;true;901.234.567-29;robson@al.infnet.edu.br;(85)92109-8765;60000-003;Rua da Paz;Parque Central;Fortaleza;CE;Ceara
+Ryan Santos da Conceição;30;7600.00;true;012.345.678-30;ryan@al.infnet.edu.br;(92)91098-7654;69000-003;Alameda dos Campos;Bairro Industrial;Manaus;AM;Amazonas
+Sergio Diogo Antonio;31;9100.00;true;123.456.789-31;sergio@al.infnet.edu.br;(21)98765-4321;20000-004;Rua Principal;Centro;Rio de Janeiro;RJ;Rio de Janeiro
+Thomás Vianna Pereira;32;8000.00;true;234.567.890-32;thomas@al.infnet.edu.br;(11)99876-5432;01000-004;Avenida do Sol;Jardim Florido;Sao Paulo;SP;Sao Paulo
+Victor Farias Casagrande;33;7500.00;true;345.678.901-33;victor@al.infnet.edu.br;(31)98765-1234;30100-004;Travessa da Lua;Vila Nova;Belo Horizonte;MG;Minas Gerais
+Vinicius Cesar Vianna;34;9600.00;true;456.789.012-34;vinicius@al.infnet.edu.br;(41)97654-3210;80000-004;Rua da Paz;Parque Central;Curitiba;PR;Parana
+Vinicius Moreira Alves de Souza;35;8300.00;true;567.890.123-35;vinicius@al.infnet.edu.br;(51)96543-2109;90000-004;Alameda dos Campos;Bairro Industrial;Porto Alegre;RS;Rio Grande do Sul
+Wosley da Costa Arruda;36;7200.00;true;678.901.234-36;wosley@al.infnet.edu.br;(71)95432-1098;40000-004;Rua Principal;Centro;Salvador;BA;Bahia
