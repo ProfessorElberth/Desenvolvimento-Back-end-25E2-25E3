@@ -8,6 +8,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import org.springframework.stereotype.Service;
 
+import br.edu.infnet.filmeapi.auxiliares.DadosInvalidosException;
+import br.edu.infnet.filmeapi.auxiliares.FilmeNaoEncontradoException;
 import br.edu.infnet.filmeapi.model.domain.Filme;
 
 @Service
@@ -17,6 +19,10 @@ public class FilmeService {
 	private final AtomicInteger nextId = new AtomicInteger(1); 
 
 	public Filme incluir(Filme filme){
+		
+		if(filme.getTitulo() == null) {
+			throw new DadosInvalidosException("O título do filme está nulo");
+		}
 		
 		filme.setId(nextId.getAndIncrement());		
 
@@ -29,4 +35,23 @@ public class FilmeService {
 
 		return new ArrayList<Filme>(mapaFilme.values());
 	}
+
+	public void excluir(Integer id) {
+		
+		if(!mapaFilme.containsKey(id)) {
+			throw new FilmeNaoEncontradoException("Filme não encontrado para o ID " + id);
+		}
+		
+		mapaFilme.remove(id);
+	}
+
+	public Filme alterar(Integer id, Filme filmeAlterado) {
+		
+		filmeAlterado.setId(id);		
+
+		mapaFilme.put(filmeAlterado.getId(), filmeAlterado);
+		
+		return filmeAlterado;
+	}
+	
 }
