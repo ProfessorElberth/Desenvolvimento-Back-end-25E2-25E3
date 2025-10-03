@@ -18,11 +18,17 @@ public class FilmeService {
 	private final Map<Integer, Filme> mapaFilme = new HashMap<Integer, Filme>();
 	private final AtomicInteger nextId = new AtomicInteger(1); 
 
-	public Filme incluir(Filme filme){
+	private void validar(Filme filme) {
 		
 		if(filme.getTitulo() == null) {
 			throw new DadosInvalidosException("O título do filme está nulo");
 		}
+		
+	}
+
+	public Filme incluir(Filme filme){
+		
+		validar(filme);
 		
 		filme.setId(nextId.getAndIncrement());		
 
@@ -47,6 +53,12 @@ public class FilmeService {
 
 	public Filme alterar(Integer id, Filme filmeAlterado) {
 		
+		if(!mapaFilme.containsKey(id)) {
+			throw new FilmeNaoEncontradoException("Filme não encontrado para o ID " + id);
+		}
+
+		validar(filmeAlterado);
+
 		filmeAlterado.setId(id);		
 
 		mapaFilme.put(filmeAlterado.getId(), filmeAlterado);

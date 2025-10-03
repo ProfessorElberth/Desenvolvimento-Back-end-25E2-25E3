@@ -14,16 +14,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.edu.infnet.filmeapi.model.domain.Filme;
+import br.edu.infnet.filmeapi.model.domain.Localizacao;
 import br.edu.infnet.filmeapi.model.service.FilmeService;
+import br.edu.infnet.filmeapi.model.service.LocalizacaoService;
 
 @RestController
 @RequestMapping("/api/filmes")
 public class FilmeController {
 
 	private final FilmeService filmeService;
+	private final LocalizacaoService localizacaoService;
 	
-	public FilmeController(FilmeService filmeService) {
+	public FilmeController(FilmeService filmeService, LocalizacaoService localizacaoService) {
 		this.filmeService = filmeService;
+		this.localizacaoService = localizacaoService;
+	}
+	
+	@GetMapping("/{cep}")
+	public Localizacao obterPorCep(@PathVariable("cep") String cep) {
+
+		return localizacaoService.obterPorCep(cep);
 	}
 	
 	@GetMapping

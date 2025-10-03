@@ -13,6 +13,7 @@ public class Filme {
 	private double avaliacaoMedia;
 	private boolean emCartaz;
 	private Genero genero;
+	private Ator atorPrincipal;
 
 	public Filme() {
 		this.setAnoLancamento(LocalDateTime.now().getYear());
@@ -27,13 +28,14 @@ public class Filme {
 
 	@Override
 	public String toString() {
-		return String.format("[Filme] id = %d, titulo = %s, anoLancamento = %d, avaliacaoMedia = %.2f, emCartaz = %s, genero = %s", 
+		return String.format("[Filme] id = %d, titulo = %s, anoLancamento = %d, avaliacaoMedia = %.2f, emCartaz = %s, genero = %s, ator = %s", 
 				this.getId(),
 				this.getTitulo(), 
 				this.getAnoLancamento(),
 				this.getAvaliacaoMedia(),
 				this.isEmCartaz(),
-				this.getGenero()
+				this.getGenero(),
+				this.getAtorPrincipal().getName()
 			);
 	}
 
@@ -83,5 +85,13 @@ public class Filme {
 
 	public void setGenero(Genero genero) {
 		this.genero = genero;
+	}
+
+	public Ator getAtorPrincipal() {
+		return atorPrincipal;
+	}
+
+	public void setAtorPrincipal(Ator atorPrincipal) {
+		this.atorPrincipal = atorPrincipal;
 	}
 }

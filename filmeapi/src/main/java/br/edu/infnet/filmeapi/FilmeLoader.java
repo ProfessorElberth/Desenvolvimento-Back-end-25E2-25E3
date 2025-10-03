@@ -9,17 +9,21 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import br.edu.infnet.filmeapi.model.domain.Ator;
 import br.edu.infnet.filmeapi.model.domain.Filme;
 import br.edu.infnet.filmeapi.model.domain.Genero;
+import br.edu.infnet.filmeapi.model.service.AtorService;
 import br.edu.infnet.filmeapi.model.service.FilmeService;
 
 @Component
 public class FilmeLoader implements ApplicationRunner {
 
 	private final FilmeService filmeService;
+	private final AtorService atorService;
 	
-	public FilmeLoader(FilmeService filmeService) {
+	public FilmeLoader(FilmeService filmeService, AtorService atorService) {
 		this.filmeService = filmeService;
+		this.atorService = atorService;
 	}
 	
 	@Override
@@ -36,9 +40,13 @@ public class FilmeLoader implements ApplicationRunner {
 			
 			String[] campos = null;
 			
-			while(linha != null) {
+			while(linha != null) {	
 			
 				campos = linha.split(";");
+				
+				Integer idAtor = Integer.valueOf(campos[5]);
+				
+				Ator ator = atorService.obterPorId(idAtor);
 				
 				Filme filme = new Filme();
 				filme.setTitulo(campos[0]);
@@ -46,6 +54,7 @@ public class FilmeLoader implements ApplicationRunner {
 				filme.setAvaliacaoMedia(Double.valueOf(campos[2]));
 				filme.setEmCartaz(Boolean.valueOf(campos[3]));
 				filme.setGenero(Genero.valueOf(campos[4]));
+				filme.setAtorPrincipal(ator);
 				
 				filmeService.incluir(filme);
 				
